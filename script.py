@@ -35,9 +35,9 @@ def compare_multiplication_speed():
 def plot_csv_data(file_name):
     print("2. Операции с CSV-файлами и построение графика")
     arr = np.genfromtxt(DATA_FILE, delimiter=';')
-    x = arr[:, 1]
-    y1 = arr[:, 4]
-    y2 = arr[:, 18]
+    x = arr[:, 0]
+    y1 = arr[:, 3]
+    y2 = arr[:, 17]
 
     # Superimposed graph
     fig, ax = plt.subplots()
